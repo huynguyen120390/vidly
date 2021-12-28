@@ -84,3 +84,9 @@ C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\Microsoft.AspNet.Identity.En
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\Microsoft.AspNet.Identity.Core.xml
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.csproj.AssemblyReference.cache
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.InitialModel.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.csproj.GenerateResource.cache
