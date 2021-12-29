@@ -93,3 +93,5 @@ C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.csproj.GenerateR
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddMembershipType.resources
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.PopulateMembershipType.resources
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.ApplyAnnotationToCustomerName.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddNameToMembershipType.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.SeedMembershipType.resources
