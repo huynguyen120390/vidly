@@ -168,13 +168,47 @@
     <Compile Include="Migrations\202112290407480_SeedMembershipType.designer.cs">
       <DependentUpon>202112290407480_SeedMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112290429516_AddBirthdayToCustomer.cs" />
+    <Compile Include="Migrations\202112290429516_AddBirthdayToCustomer.designer.cs">
+      <DependentUpon>202112290429516_AddBirthdayToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112290438297_SeedBirthDayToCustomer.cs" />
+    <Compile Include="Migrations\202112290438297_SeedBirthDayToCustomer.designer.cs">
+      <DependentUpon>202112290438297_SeedBirthDayToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112290529059_AddSomeFieldsToMovie.cs" />
+    <Compile Include="Migrations\202112290529059_AddSomeFieldsToMovie.designer.cs">
+      <DependentUpon>202112290529059_AddSomeFieldsToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112290531174_ChangeGenreFieldToString.cs" />
+    <Compile Include="Migrations\202112290531174_ChangeGenreFieldToString.designer.cs">
+      <DependentUpon>202112290531174_ChangeGenreFieldToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112290537164_AddGenreModel.cs" />
+    <Compile Include="Migrations\202112290537164_AddGenreModel.designer.cs">
+      <DependentUpon>202112290537164_AddGenreModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112290539080_SeedGenre.cs" />
+    <Compile Include="Migrations\202112290539080_SeedGenre.designer.cs">
+      <DependentUpon>202112290539080_SeedGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112290556353_AddMovies.cs" />
+    <Compile Include="Migrations\202112290556353_AddMovies.designer.cs">
+      <DependentUpon>202112290556353_AddMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112290557131_SeeMovies.cs" />
+    <Compile Include="Migrations\202112290557131_SeeMovies.designer.cs">
+      <DependentUpon>202112290557131_SeeMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -217,6 +251,7 @@
     <Content Include="Views\Customer\Details.cshtml" />
     <Content Include="Views\Movie\Details.cshtml" />
     <Content Include="Views\Movie\Index.cshtml" />
+    <Content Include="Views\Customer\CustomerForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -252,6 +287,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112290407480_SeedMembershipType.resx">
       <DependentUpon>202112290407480_SeedMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290429516_AddBirthdayToCustomer.resx">
+      <DependentUpon>202112290429516_AddBirthdayToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290438297_SeedBirthDayToCustomer.resx">
+      <DependentUpon>202112290438297_SeedBirthDayToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290529059_AddSomeFieldsToMovie.resx">
+      <DependentUpon>202112290529059_AddSomeFieldsToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290531174_ChangeGenreFieldToString.resx">
+      <DependentUpon>202112290531174_ChangeGenreFieldToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290537164_AddGenreModel.resx">
+      <DependentUpon>202112290537164_AddGenreModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290539080_SeedGenre.resx">
+      <DependentUpon>202112290539080_SeedGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290556353_AddMovies.resx">
+      <DependentUpon>202112290556353_AddMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290557131_SeeMovies.resx">
+      <DependentUpon>202112290557131_SeeMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

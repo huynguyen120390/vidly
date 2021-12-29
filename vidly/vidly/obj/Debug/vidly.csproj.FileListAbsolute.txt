@@ -95,3 +95,11 @@ C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.Popul
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.ApplyAnnotationToCustomerName.resources
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddNameToMembershipType.resources
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.SeedMembershipType.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddBirthdayToCustomer.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.SeedBirthDayToCustomer.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddSomeFieldsToMovie.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.ChangeGenreFieldToString.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddGenreModel.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.SeedGenre.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddMovies.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.SeeMovies.resources

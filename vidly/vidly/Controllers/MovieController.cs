@@ -3,36 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.Entity;
 using vidly.Models;
 
 namespace vidly.Controllers
 {
     public class MovieController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public MovieController()
+        {
+            _context = new ApplicationDbContext();
+        }
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
         // GET: Customer
         public ActionResult Index()
         {
-            var customerList = new List<Movie>()
-            {
-                new Movie() {Id = 0, Name = "Con co be be"},
-                new Movie() {Id = 1, Name = "Con chim non"}
-            };
+            var customerList = _context.Movies.Include(m => m.Genre).ToList();
             return View(customerList);
         }
+
 
         //GET: Customer/Details/1
         public ActionResult Details(int id)
         {
-            var customerList = new List<Movie>()
-            {
-                new Movie() {Id = 0, Name = "Con co be be"},
-                new Movie() {Id = 1, Name = "Con chim non"}
-            };
-            if (id >= customerList.Count)
+            var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m=>m.Id==id);
+            if (movie == null)
             {
                 return HttpNotFound();
             }
-            return View(customerList[id]);
+            return View(movie);
         }
     }
 }

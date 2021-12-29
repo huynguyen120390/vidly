@@ -8,14 +8,18 @@
 <table id="customers" class="table table-bordered table-hover">
     <thead>
         <tr>
-            <th scope="col">Customer</th>
+            <th scope="col">Movie</th>
+            <th>Genre</th>
         </tr>
     </thead>
     <tbody>
         @{
-            foreach (var customer in Model)
+            foreach (var movie in Model)
             {   <tr>
-                    <td>@customer.Name</td>
+                    <td>
+                        @Html.ActionLink(linkText:@movie.Name, actionName:"Details", controllerName:"Movie", routeValues: new {id=@movie.Id}, htmlAttributes:null)
+                    </td>
+                    <td>@movie.Genre.Name</td>
                 </tr>
             }
         }
