@@ -148,10 +148,23 @@
     <Compile Include="Migrations\202112282341575_InitialModel.designer.cs">
       <DependentUpon>202112282341575_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112290009166_AddMembershipType.cs" />
+    <Compile Include="Migrations\202112290009166_AddMembershipType.designer.cs">
+      <DependentUpon>202112290009166_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112290102522_PopulateMembershipType.cs" />
+    <Compile Include="Migrations\202112290102522_PopulateMembershipType.designer.cs">
+      <DependentUpon>202112290102522_PopulateMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112290136362_ApplyAnnotationToCustomerName.cs" />
+    <Compile Include="Migrations\202112290136362_ApplyAnnotationToCustomerName.designer.cs">
+      <DependentUpon>202112290136362_ApplyAnnotationToCustomerName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -216,6 +229,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202112282341575_InitialModel.resx">
       <DependentUpon>202112282341575_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290009166_AddMembershipType.resx">
+      <DependentUpon>202112290009166_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290102522_PopulateMembershipType.resx">
+      <DependentUpon>202112290102522_PopulateMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112290136362_ApplyAnnotationToCustomerName.resx">
+      <DependentUpon>202112290136362_ApplyAnnotationToCustomerName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

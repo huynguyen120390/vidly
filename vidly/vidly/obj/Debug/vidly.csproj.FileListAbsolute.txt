@@ -90,3 +90,6 @@ C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\Microsoft.Configuration.Conf
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.InitialModel.resources
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.csproj.GenerateResource.cache
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddMembershipType.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.PopulateMembershipType.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.ApplyAnnotationToCustomerName.resources
