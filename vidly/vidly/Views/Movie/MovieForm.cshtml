@@ -1,0 +1,52 @@
+﻿@model vidly.ViewModels.MovieFormViewModel
+@{
+    ViewBag.Title = "MovieForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>@Model.ViewTitle</h2>
+
+@using (Html.BeginForm(actionName: "Save", controllerName: "Movie"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Movie.Name)
+        @Html.TextBoxFor(m => m.Movie.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.Movie.Name, null, htmlAttributes: new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Movie.ReleaseDate)
+        @Html.TextBoxFor(m => m.Movie.ReleaseDate, new { @class = "form-control", @type = "date", @ITempDataProvider = "datepicker" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Movie.DateAdded)
+        @Html.TextBoxFor(m => m.Movie.DateAdded, new {@class = "form-control", @type = "date", @ITempDataProvider = "datepicker"})
+        
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Movie.NumberInStock)
+        @Html.TextBoxFor(m => m.Movie.NumberInStock, new { @class = "form-control", placeholder = "0" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Movie.GenreId)
+
+        @Html.DropDownListFor(m => m.Movie.GenreId,
+            new SelectList(Model.Genres, "Id", "Name"),
+            "Select A Genre", new { @class = "form-control" })
+        @{
+            if (@Model.Movie.GenreId != null)
+            {
+                <p>@Model.Movie.GenreId</p>
+            }
+            else
+            {
+                <p>Null</p>
+            }
+        }
+        
+    </div>
+ 
+    @Html.HiddenFor(m => m.Movie.Id)
+
+    <button type="submit" class="btn btn-primary">Save</button>
+}

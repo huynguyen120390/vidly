@@ -103,3 +103,4 @@ C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddGe
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.SeedGenre.resources
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddMovies.resources
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.SeeMovies.resources
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.Migrations.AddSomething.resources

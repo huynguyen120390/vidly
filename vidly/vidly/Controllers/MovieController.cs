@@ -4,7 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 using vidly.Models;
+using vidly.ViewModels;
 
 namespace vidly.Controllers
 {
@@ -37,6 +39,74 @@ namespace vidly.Controllers
                 return HttpNotFound();
             }
             return View(movie);
+        }
+
+
+        public ActionResult New()
+        {
+            var genres = _context.Genres.ToList();
+            var viewModel = new MovieFormViewModel()
+            {
+                Movie = new Movie(),
+                Genres = genres,
+                ViewTitle = "Add New Movie"
+            };
+            return View("MovieForm", viewModel);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
+            var genres = _context.Genres.ToList();
+            var viewModel = new MovieFormViewModel()
+            {
+                Movie = movie,
+                Genres = genres,
+                ViewTitle = "Edit Movie"
+            };
+            return View("MovieForm", viewModel);
+
+        }
+
+        [HttpPost]
+        public ActionResult Save(Movie movie)
+        {
+            var genres = _context.Genres.ToList();
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MovieFormViewModel()
+                {
+                    Genres = genres,
+                    Movie = movie
+                };
+                return View("MovieForm", viewModel);
+            }
+            if (movie.Id == 0)
+            {
+                _context.Movies.Add(movie);
+            }
+            else
+            {
+                var movieInDb = _context.Movies.Single(c => c.Id == movie.Id); //This will thrown an exception if customer is not found
+                //TryUpdateModel(customerInDb); //Don't try to update all properties with this function
+                movieInDb.Name = movie.Name;
+                movieInDb.ReleaseDate= movie.ReleaseDate;
+                movieInDb.GenreId = movie.GenreId;
+                movieInDb.DateAdded = movie.DateAdded;
+                //We can use Auto Mapper to map, but still consider limited amount of info which user can update
+
+            }
+
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            
+            return RedirectToAction("Index", "Customer");
         }
     }
 }
