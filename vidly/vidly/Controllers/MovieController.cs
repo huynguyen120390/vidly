@@ -69,6 +69,7 @@ namespace vidly.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
             var genres = _context.Genres.ToList();

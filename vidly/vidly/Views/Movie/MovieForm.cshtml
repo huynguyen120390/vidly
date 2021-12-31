@@ -9,10 +9,11 @@
 
 @using (Html.BeginForm(actionName: "Save", controllerName: "Movie"))
 {
+    @Html.ValidationSummary(true, "Please fix the following errors")
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.Name)
         @Html.TextBoxFor(m => m.Movie.Name, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m=>m.Movie.Name, null, htmlAttributes: new { @class = "text-danger" })
+        @Html.ValidationMessageFor(m => m.Movie.Name, null, htmlAttributes: new { @class = "text-danger" })
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.ReleaseDate)
@@ -20,8 +21,8 @@
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.DateAdded)
-        @Html.TextBoxFor(m => m.Movie.DateAdded, new {@class = "form-control", @type = "date", @ITempDataProvider = "datepicker"})
-        
+        @Html.TextBoxFor(m => m.Movie.DateAdded, new { @class = "form-control", @type = "date", @ITempDataProvider = "datepicker" })
+
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Movie.NumberInStock)
@@ -43,10 +44,14 @@
                 <p>Null</p>
             }
         }
-        
-    </div>
- 
-    @Html.HiddenFor(m => m.Movie.Id)
 
+    </div>
+
+    @Html.HiddenFor(m => m.Movie.Id)
+    @Html.AntiForgeryToken()
     <button type="submit" class="btn btn-primary">Save</button>
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
 }
