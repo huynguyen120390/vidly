@@ -110,4 +110,5 @@ C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\System.Web.Http.WebHost.dll
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\System.Net.Http.Formatting.xml
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\System.Web.Http.xml
 C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\System.Web.Http.WebHost.xml
-C:\huycodelab\aspnet_learning\vidly\vidly\vidly\obj\Debug\vidly.csproj.CopyComplete
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\AutoMapper.dll
+C:\huycodelab\aspnet_learning\vidly\vidly\vidly\bin\AutoMapper.xml
